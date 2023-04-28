@@ -22,6 +22,7 @@ tasks.register('cloneLayoutlib') {
       grgit.clone {
         dir = repoDir
         uri = "https://android.googlesource.com/platform/prebuilts/studio/layoutlib"
+        depth = 1
       }
       logger.warn('Cloned prebuilt layoutlib.')
     }
